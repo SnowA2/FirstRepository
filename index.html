@@ -1,7 +1,135 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title> My First Webpage></title>
+  <title>My First Webpage</title>
+
+<style>
+	body {
+		background-color: powderblue;
+		font-family: Arial;
+		color: black;
+		text-align: center;
+		}
+	header {
+		background-color: tomato;
+		color: white;
+		text-align: center;
+		padding: 20px;
+		}
+
+	h1 {
+		color: navy;
+		font-size: 36px;
+		}
+
+	p {
+		font-size: 18px;
+		}
+
+	img {
+		width: 150px;
+		height: 200px;
+		border-radius: 50%;
+		border: 3px solid white;
+		margin-top: 10px;
+		}
+	
+	
+
+	
+
+
+
+	.table-style1 {
+		width: 80%;
+		margin: 20px auto;
+		border: 2px solid navy;
+		}
+	
+	.table-style1 th, .table-style1 td {
+		border: 1px solid navy;
+		padding: 10px;
+		text-align: center;
+		}
+
+	.table-style1 th{
+		background-color: lightblue;
+		}
+
+	
+
+	.table-style2 {
+		width: 60%;
+		margin: 20px auto;
+		border-collapse: collapse;
+		border: 2px solid darkgreen;
+		}
+	
+	.table-style2 th, .table-style2 td {
+		border: 1px solid darkgreen;
+		padding: 10px;
+		text-align: center;
+		}
+
+	.table-style2 th{
+		background-color: lightgreen;
+		}
+
+	
+
+	
+
+
+	.about {
+		width: 60%;
+		margin: 20px auto;
+		text-align: left;
+		}
+
+	
+
+
+
+	div.mycontainer {
+			
+		width: 66%;
+		overflow:auto;
+		}
+
+	div.mycontainer div {
+		width:50%;
+		float:left;
+		}
+	
+	
+
+	.list-style1 {
+		list-style-type: square;
+		color: darkblue;
+		text-align: left;
+		margin:20px;
+		}
+
+	.list-style2 {
+		list-style-type: circle;
+		color: darkgreen;
+		text-align: left;
+		margin:20px;
+		}
+
+
+
+
+	.video {
+		width: 35%;
+		margin: 10px auto;
+		text-align: center;
+		border: 3px solid green;
+		}	
+
+
+</style>
+	
 </head>
 <body>
 <header>
@@ -13,7 +141,7 @@
     Location: Kansas City, MO
   </pre>
 </header>
-<section>
+<section class= "about">
   <p>
     Check out my favorite website: <a href="https://www.youtube.com/" target="_blank"> YouTube</a>
   </p>
@@ -27,7 +155,7 @@
 <hr>
 
 <h2>My Hobbies</h2>
-  <table>
+  <table class= "table-style1">
     <tr>
       <th>Hobby</th>
       <th>Hours/Week</th>
@@ -43,7 +171,7 @@
   </table>
 
 <h2>My Favorite Musicals</h2>
-<table>
+<table class= "table-style2">
     <tr>
       <th>Musical</th>
       <th>Best Year</th>
@@ -59,28 +187,32 @@
   </table>
 
 <hr>
-
+<div class = "mycontainer">
+<div>
 <h2>My Favorite Foods</h2>
-<ul>
+<ul class= "list-style1">
 	<li>Pizza</li>
 	<li>Cheesecake</li>
 	<li>Tofu</li>
 </ul>
 
-<br>
+</div>
+<div>
 
 <h2>My Favorite Drinks</h2>
-<ul>
+<ul class= "list-style2">
 	<li>Water</li>
 	<li>Milk</li>
 	<li>Kefir</li>
 </ul>
+</div>
+</div>
 
 <hr>
 
-<section>
+<section class= "video">
 <h2>Check Out This Video</h2>
-<video width="480" height="360" controls>
+<video width="540" height="360" controls>
 <source src="https://github.com/SnowA2/FirstRepository/blob/main/Caramel.mp4?raw=True">
 Your browser does not support the video tag.
 </video>
@@ -96,4 +228,3 @@ Your browser does not support the video tag.
 
 </body>
 </html>
-
